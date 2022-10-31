@@ -166,6 +166,7 @@ text-decoration: none;
     display: block;
     margin: 0 auto;
     padding: 10px 32px;
+    border: none;
 }
 .hero-btn.primary{
     border-radius: 4px;
@@ -183,6 +184,7 @@ text-decoration: none;
     align-items: center;
     gap: 30px;
     margin-bottom: 30px;
+    align-items: baseline;
 }
 .info-item{
     background-color: var(--background-icon);
@@ -192,6 +194,8 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 .section-info{
     padding-bottom: 0;
@@ -260,8 +264,8 @@ text-decoration: none;
     border-radius: 0px 0px 4px 4px;
 }
 .team{
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .name{
@@ -282,8 +286,7 @@ text-decoration: none;
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 16px;
-    margin-top: 30px;
+    margin-top: 16px;
 }
 .team-soc-item {
     width: 44px;
@@ -434,9 +437,19 @@ text-decoration: none;
 .contact-footer:focus{
     color: var(--accent-text-color);
 }
-.contact-wrap > .container{
+.pre-title-footer{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+.contact-wrap {
     display: flex;
     gap: 70px;
+    align-items: baseline;
 }
 .title-footer{
     text-transform: uppercase;
